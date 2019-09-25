@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const employeeController = require('./controllers/employeeController')
+const employeeController = require('./controllers/employeeController');
+const performanceController = require('./controllers/performanceController')
 
 app.use(express.json());
 
@@ -12,6 +13,11 @@ app.route('api/employees')
 .post(employeeController.createEmployee)
 .put(employeeController.updateEmployee)
 .delete(employeeController.deleteEmployee)
+
+app.route('api/performance')
+.get(performanceController.getPerformance)
+.post(performanceController.createPerformance)
+.put(performanceController.updatePerformance)
 
 
 
