@@ -1,9 +1,13 @@
+let employees = [{name: "jazib", id:1, reviewsToFill: []}, {name: "sumair", id:2, reviewsToFill: []}]
+
 function getEmployee(req, res) {
-    res.status(200).send("get employee api working")
+    res.status(200).send(employees)
 }
 
 function createEmployee(req, res) {
-    res.status(200).send("post employee api working")
+    let employeeToSave = req.data.employee;
+    employees.push(employeeToSave);
+    res.status(200).send("employee saved successfully");
 }
 
 function updateEmployee(req, res) {
