@@ -1,0 +1,22 @@
+{
+  "name": "fullstackengineerchallenge",
+  "version": "1.0.0",
+  "description": "This is an interview challengs. Please feel free to fork. Pull Requests will be ignored.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazib-m/FullStackEngineerChallenge.git"
+  },
+  "author": "jazib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jazib-m/FullStackEngineerChallenge/issues"
+  },
+  "homepage": "https://github.com/jazib-m/FullStackEngineerChallenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
