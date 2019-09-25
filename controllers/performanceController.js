@@ -10,5 +10,19 @@ function updatePerformance(req, res) {
     res.status(200).send("put Performance api working")
 }
 
+function getAllPerformance(req, res) {
+    res.status(200).send("put Performance api working")
+}
 
-module.exports = {getPerformance, createPerformance, updatePerformance};
+function assignPerformanceReview(req, res) {
+    res.status(200).send("put Performance api working")
+}
+
+
+module.exports = { 
+    getPerformance,
+    createPerformance, 
+    updatePerformance, 
+    getAllPerformance, 
+    assignPerformanceReview 
+};

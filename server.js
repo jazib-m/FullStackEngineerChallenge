@@ -15,6 +15,12 @@ app.route('api/employees')
 .delete(employeeController.deleteEmployee)
 
 app.route('api/performance')
+.get(performanceController.getAllPerformance)
+
+app.route('api/performance/assign')
+.get(performanceController.assignPerformanceReview)
+
+app.route('api/performance:employeeId')
 .get(performanceController.getPerformance)
 .post(performanceController.createPerformance)
 .put(performanceController.updatePerformance)
